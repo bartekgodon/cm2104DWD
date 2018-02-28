@@ -40,11 +40,12 @@ section, article{
   padding: 0;
   overflow: hidden;
   background-color: #39B54A;
-  opacity: 0.85;
+  opacity: 1;
   width: 100%;
   font-family: sans-serif;
   margin-bottom:10px;
-  box-shadow: 0px 5px 15px grey;
+  z-index: 1;
+  box-shadow: 0px 10px 15px lightgray;
 }
 
 #navigationBar li {
@@ -55,7 +56,6 @@ section, article{
   color: white;
   display: block;
   padding: 14px 16px;
-  color: white;
   text-align: center;
   text-decoration: none;
   border-right: 1.5px solid #bbb;
@@ -114,4 +114,33 @@ p{
   color: grey;
   text-align: center;
   width: 250px;
+}
+
+#polygon{
+  border-top: 46px solid white;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0px;
+  width: 350px;
+  display: block;
+  margin: auto;
+
+}
+
+@media (min-width: 100px) {
+    #polygon {
+        border-top: 46px solid #39B54A;
+    }
+}
+
+@media (min-width: 950px) {
+    #polygon {
+        border-top: 46px solid #39B54A;
+    }
+}
+
+@media (min-width: 1000px) {
+    #polygon {
+        border-top: 46px solid white;
+    }
 }
