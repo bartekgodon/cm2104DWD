@@ -22,29 +22,46 @@
         <div id = "polygon"></div>
       </ul>
     </nav>
-
   </header>
 
 
-  <content>
-    <h1>Begin your journey...</h1>
+  <content class = "content">
+    <section id = "search">
+      <form id = "searchForm">
+        <h1 id = "searchHead"> Find attractions near you with Journey...</h1>
+        <input id = "placeSearch" type = "text" placeholder = "Search for a place..." size = 50px><br>
+
+        <div id = "list">
+          <select id = "categorySelect">
+            <option value="0">Select attraction category...</option>
+            <option value="1">Theme Park</option>
+            <option value="2">Restaurant</option>
+            <option value="3">Museum</option>
+            <option value="4">Bar</option>
+            <option value="5">Famous Places</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
+    <h1 class = "infoHead">Begin your journey...</h1>
     <section id = "pageContent">
       <article class = "post">
         <img id = "bubbleImage" src = "bubble.jpg"></img>
-        <h2>Search</h2>
-        <p>Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
+        <h2 class = "topicHead">Search</h2>
+        <p class = "topicText">Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
       </article>
 
       <article class = "post">
         <img id = "bubbleImage" src = "bubble.jpg"></img>
-        <h2>Search</h2>
-        <p>Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
+        <h2 class = "topicHead">Search</h2>
+        <p class = "topicText">Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
       </article>
 
       <article class = "post">
         <img id = "bubbleImage" src = "bubble.jpg"></img>
-        <h2>Search</h2>
-        <p>Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
+        <h2 class = "topicHead">Search</h2>
+        <p class = "topicText">Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
       </article>
     </section>
   </content>
