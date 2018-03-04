@@ -20,6 +20,7 @@ body{
   top:inherit;
   vertical-align:middle;
   opacity: 1;
+  padding: 5px;
 }
 
 #navigationBar{
@@ -117,6 +118,7 @@ body{
   width:240px;
   height:240px;
   border-radius: 50%;
+  border: 5px solid #d9d9d9;
 }
 
 .infoHead{
