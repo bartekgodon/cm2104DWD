@@ -34,7 +34,7 @@ body{
   font-family: sans-serif;
   margin-bottom:10px;
   z-index: 1;
-  box-shadow: 0px 10px 15px silver;
+  box-shadow: 0px 10px 13px  #cccccc;
 }
 
 #navigationBar li {
@@ -145,30 +145,88 @@ body{
   width: 250px;
 }
 
+
+/*------------------------Search tab style--------------------------  */
 #search{
   opacity: 0.8;
   background-color: #d9d9d9;
   margin-top: 50px;
   width:auto;
-  box-shadow: 0px 10px 15px silver;
-  height: 400px
+  box-shadow: 0px 10px 13px  #cccccc;
+  height: auto;
 }
 
-#searchForm{
-  display:block;
-  padding: 100px;
-  padding-top: 50px;
+.tablinks{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #39B54A;
+  font-weight: bolder;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #d9d9d9;
+    /* box-shadow: 0px -10px 15px silver; */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: #bfbfbf;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.015s;
+    width: 50%;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color:  #d9d9d9;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 200px;
+    background-color:  #d9d9d9;
+}
+
+/* .tabcontent {
+    animation: fadeEffect 0.1s; /* Fading effect takes 1 second */
+} */
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#searchHead{
+  font-family: sans-serif;
+  color: #39B54A;
+  padding-left: 50px;
+  padding-top: 30px;
 }
 
 #placeSearch{
-  padding: 10px;
+  display: block;
   font-size: 17px;
+  font-family: sans-serif;
+  width:60%;
+  height: 34px;
+  margin: auto;
+  margin-top: 75px;
 }
 
 #list{
   position: relative;
   font-family: sans-serif;
-  padding-top: 10px;
 }
 
 #searchHead{
@@ -178,7 +236,11 @@ body{
 
 #categorySelect{
   color: gray;
-  padding: 8px 10px;
-  width:510px;
-  border: 1px solid transparent gray;
+  display: block;
+  margin: auto;
+  margin-top: 75px;
+  height: 40px;
+  width:60%;
+  font-size: 17px;
+  font-family: sans-serif;
 }

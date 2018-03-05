@@ -6,6 +6,7 @@
   <link rel = "stylesheet" href = "styles/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type = "text/javascript" src = "scrollScript.js"></script>
+  <script type = "text/javascript" src = "changeTab.js"></script>
 </head>
 
 <body>
@@ -26,22 +27,40 @@
 
 
   <content class = "content">
-    <section id = "search">
-      <form id = "searchForm">
-        <h1 id = "searchHead"> Find attractions near you with Journey...</h1>
-        <input id = "placeSearch" type = "text" placeholder = "Search for a place..." size = 50px><br>
 
+    <h1 id = "searchHead"> Find attractions near you with Journey...</h1>
+
+    <section id = "search">
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id = "defaultOpen">Search by Location Name</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Search by Category</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="London" class="tabcontent">
+        <input id = "placeSearch" type = "text" placeholder = " Search for a place..." size = 50px>
+      </div>
+
+      <div id="Paris" class="tabcontent">
         <div id = "list">
-          <select id = "categorySelect">
-            <option value="0">Select attraction category...</option>
-            <option value="1">Theme Park</option>
-            <option value="2">Restaurant</option>
-            <option value="3">Museum</option>
-            <option value="4">Bar</option>
-            <option value="5">Famous Places</option>
-          </select>
-        </div>
-      </form>
+              <select id = "categorySelect">
+                  <option value="0">Select attraction category...</option>
+                  <option value="1">Theme Park</option>
+                  <option value="2">Restaurant</option>
+                  <option value="3">Museum</option>
+                  <option value="4">Bar</option>
+                  <option value="5">Famous Places</option>
+              </select>
+          </div>
+      </div>
+
+      <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
+
     </section>
 
     <h1 class = "infoHead">Begin your journey...</h1>
