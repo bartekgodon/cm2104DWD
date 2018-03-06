@@ -4,12 +4,17 @@
   <meta charset="utf-8">
   <title> Journey - Adventure Awaits </title>
   <link rel = "stylesheet" href = "styles/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- link used scripts to html  -->
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type = "text/javascript" src = "scrollScript.js"></script>
   <script type = "text/javascript" src = "changeTab.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<!-- body start -->
+
 <body>
+  <!-- navigation/header start  -->
   <header id = "header">
     <div id = "headerBanner">
       <img id = "logo" src = "LogoJourney.png"></img>
@@ -25,25 +30,30 @@
     </nav>
   </header>
 
+  <!-- navigation/header end -->
 
+  <!-- content start -->
   <content class = "content">
 
+
+<!-- ===========================search tab start=========================== -->
     <h1 id = "searchHead"> Find attractions near you with Journey...</h1>
 
     <section id = "search">
 
       <!-- Tab links -->
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id = "defaultOpen">Search by Location Name</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Search by Category</button>
+        <button class="tablinks" onclick="openCity(event, 'tab1')" id = "defaultOpen">Search by Location Name</button>
+        <button class="tablinks" onclick="openCity(event, 'tab2')">Search by Category</button>
       </div>
 
       <!-- Tab content -->
-      <div id="London" class="tabcontent">
-        <input id = "placeSearch" type = "text" placeholder = " Search for a place..." size = 50px>
-      </div>
+      <form id ="tab1" class="tabcontent">
+        <input id = "placeSearch" type = "text" placeholder = " Search for a place...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
 
-      <div id="Paris" class="tabcontent">
+      <form id ="tab2" class="tabcontent">
         <div id = "list">
               <select id = "categorySelect">
                   <option value="0">Select attraction category...</option>
@@ -54,7 +64,9 @@
                   <option value="5">Famous Places</option>
               </select>
           </div>
-      </div>
+          <input type="number" id = "quantity" placeholder = "Search Radius" min="1" max="100">
+          <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
 
       <script>
         // Get the element with id="defaultOpen" and click on it
@@ -62,32 +74,43 @@
       </script>
 
     </section>
+    <!-- search tab end -->
 
+    <!-- information section start -->
     <h1 class = "infoHead">Begin your journey...</h1>
     <section id = "pageContent">
       <article class = "post">
         <img id = "bubbleImage" src = "bubble.jpg"></img>
         <h2 class = "topicHead">Search</h2>
-        <p class = "topicText">Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
+        <p class = "topicText">Discover countless locations near you based on their category.</p>
       </article>
 
       <article class = "post">
         <img id = "bubbleImage" src = "bubble.jpg"></img>
-        <h2 class = "topicHead">Search</h2>
-        <p class = "topicText">Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
+        <h2 class = "topicHead">Favourite</h2>
+        <p class = "topicText">Save your favourite locations,
+          making it easier to find them and relive your memories.
+        </p>
       </article>
 
       <article class = "post">
         <img id = "bubbleImage" src = "bubble.jpg"></img>
-        <h2 class = "topicHead">Search</h2>
-        <p class = "topicText">Lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum</p>
+        <h2 class = "topicHead">Profile</h2>
+        <p class = "topicText">Create a profile to review your favourite places and save locations you wish to visit.</p>
       </article>
     </section>
+    <!-- inforamtion section end -->
   </content>
 
+<!--content end  -->
 
-  <footer>
+<!-- footer start -->
+  <footer id = "footer">
 
   </footer>
+<!-- footer end -->
 </body>
+
+<!-- body end -->
+
 </html>

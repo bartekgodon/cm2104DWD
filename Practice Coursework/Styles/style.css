@@ -51,7 +51,7 @@ body{
 }
 
 #navigationBar li:hover{
-  background-color: #111;
+  background-color: #006622;
 }
 
 #navigationBar li:last-child {
@@ -101,6 +101,7 @@ body{
 #pageContent{
   height: 100%;
   padding: 16px;
+  padding-bottom: 80px;
   margin: 0;
   display: -webkit-box;
   display: -moz-box;
@@ -115,8 +116,8 @@ body{
 #bubbleImage{
   display: block;
   margin: auto;
-  width:240px;
-  height:240px;
+  width:250px;
+  height:250px;
   border-radius: 50%;
   border: 5px solid #d9d9d9;
 }
@@ -195,10 +196,13 @@ body{
     border-top: none;
     height: 200px;
     background-color:  #d9d9d9;
+    padding-left:20%;
+    padding-right:20%;
 }
 
 /* .tabcontent {
     animation: fadeEffect 0.1s; /* Fading effect takes 1 second */
+
 } */
 
 /* Go from zero to full opacity */
@@ -218,10 +222,12 @@ body{
   display: block;
   font-size: 17px;
   font-family: sans-serif;
-  width:60%;
-  height: 34px;
+  width:85%;
+  height: 40px;
   margin: auto;
   margin-top: 75px;
+  float: left;
+  color: grey;
 }
 
 #list{
@@ -240,7 +246,47 @@ body{
   margin: auto;
   margin-top: 75px;
   height: 40px;
-  width:60%;
+  width:70%;
   font-size: 17px;
   font-family: sans-serif;
+  float: left;
+}
+
+.tabcontent button{
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: none; /* Prevent double borders */
+  cursor: pointer;
+  margin-top: 75px;
+}
+
+.tabcontent::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#quantity{
+  width: 15%;
+  float: left;
+  margin-top: 75px;
+  height: 40px;
+  font-size: 17px;
+  color: grey;
+}
+
+/* -----------------------footer style------------------------------ */
+
+#footer{
+  height: 70px;
+  background-color: #39B54A;
+  box-shadow: 0px -1px 8px 5px  #cccccc;
+  width: 100%
 }
