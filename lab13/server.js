@@ -1,3 +1,5 @@
+app.use(express.static('public'));
+
 var express = require('express');
 var app = express();
 var oneLinerJoke = require("one-liner-joke");
