@@ -1,4 +1,3 @@
-app.use(express.static('public'));
 
 var express = require('express');
 var app = express();
@@ -40,3 +39,4 @@ app.get('/calc', function(req, res){
 });
 
 app.listen(8080);
+app.use(express.static('public'));
