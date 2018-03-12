@@ -15,9 +15,10 @@ app.get('/joke', function(req, res){
 });
 
 app.get('/add', function(req, res){
-  var x = req.query.parseInt(x);
-  var y = req.query.parseInt(y);
- res.send("X + Y=" + (x+y));
+  var x = req.query.x;
+  var y = req.query.y;
+  var z = x+y;
+ res.send("X + Y=" + z;
 });
 
 app.listen(8080);
