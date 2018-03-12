@@ -30,7 +30,7 @@ app.get('/calc', function(req, res){
     var z = parseInt(x) + parseInt(y);
     res.send("X + Y=" + z);
   }
-  else if(type = "sub"){
+  if(type = "sub"){
     var z = parseInt(x) - parseInt(y);
     res.send("X - Y=" + z);
   }
