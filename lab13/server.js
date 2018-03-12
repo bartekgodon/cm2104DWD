@@ -21,4 +21,20 @@ app.get('/add', function(req, res){
  res.send("X + Y=" + z);
 });
 
+app.get('/calc', function(req, res){
+  var x = req.query.x;
+  var y = req.query.y;
+  var type = req.query.type;
+
+  if(type = "add"){
+    var z = parseInt(x) + parseInt(y);
+    res.send("X + Y=" + z);
+  }
+  else if(type = "sub"){
+    var z = parseInt(x) - parseInt(y);
+    res.send("X - Y=" + z);
+  }
+
+});
+
 app.listen(8080);
