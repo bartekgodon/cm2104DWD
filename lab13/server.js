@@ -11,9 +11,7 @@ app.get('/test', function(req, res){
 });
 
 app.get('/joke', function(req, res){
- res.writeHead(200, {'Content-Type': 'text/html'});
  res.send(oneLinerJoke.getRandomJoke());
- res.end(randomJoke.body);
 });
 
 app.listen(8080);
