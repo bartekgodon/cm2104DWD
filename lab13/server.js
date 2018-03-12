@@ -26,11 +26,11 @@ app.get('/calc', function(req, res){
   var y = req.query.y;
   var type = req.query.type;
 
-  if(type = "add"){
+  if(type == "add"){
     var z = parseInt(x) + parseInt(y);
     res.send("X + Y=" + z);
   }
-  if(type = "sub"){
+  if(type == "sub"){
     var z = parseInt(x) - parseInt(y);
     res.send("X - Y=" + z);
   }
