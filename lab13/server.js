@@ -18,7 +18,7 @@ app.get('/add', function(req, res){
   var x = req.query.x;
   var y = req.query.y;
   var z = x+y;
- res.send("X + Y=" + z;
+ res.send("X + Y=" + z);
 });
 
 app.listen(8080);
