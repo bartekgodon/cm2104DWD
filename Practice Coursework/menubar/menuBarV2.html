@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "menuV2.css">
+</head>
+
+<body>
+  <header id = "head">
+    <div id = "bannerTop">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <div id = "bannerBottom"></div>
+    <div id = "bannerBottomBorder"></div>
+    <img id = "logo" src = "LogoJourney.png"></img>
+
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }
+    </script>
+
+
+  </header>
+</body>
+
+</html>
