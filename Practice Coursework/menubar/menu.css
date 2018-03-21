@@ -5,7 +5,7 @@ body{
 #head{
   height: auto;
   width: auto;
-  filter: drop-shadow(6px 6px 6px #999999);
+  filter: drop-shadow(6px 6px 6px #a6a6a6);
 }
 
 #bannerTop{
