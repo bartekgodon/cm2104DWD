@@ -23,7 +23,7 @@ app.get("/all",function(req, res){
       output += "<div>";
       output += "<h3>" + result[i].name + "</h3>";
       output += "<p>" + result[i].quote + "</p>";
-      output += "/div";
+      output += "</div>";
     }
     res.send(output);
   });
