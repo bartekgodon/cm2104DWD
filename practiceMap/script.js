@@ -26,7 +26,7 @@ function initialize() {
       zoom: 15,
       disableDefaultUI: true
     });
-
+//new method here
   var request = {
     location: aberdeen,
     radius: '2000',
@@ -36,7 +36,7 @@ function initialize() {
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callback);
 }
-
+//end
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
