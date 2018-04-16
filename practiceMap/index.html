@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Map </title>
+  <script type = "text/javascript" src = "script.js"></script>
+  <link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&libraries=places"></script> -->
+  <div id = "map"></div>
+
+
+  <div id = "search">
+    <input id = "address" type = "textbox"  onkeydown="checkSubmit()" size = "50">
+    <input type = "button" value = "Search" onclick="codeAddress()">
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initialize&libraries=places" async defer>
+  </script>
+
+</body>
