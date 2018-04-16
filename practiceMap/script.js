@@ -30,7 +30,7 @@ function initialize() {
   var request = {
     location: aberdeen,
     radius: '2000',
-    type: ['restaurant']
+    type: ['bar']
   };
 
   service = new google.maps.places.PlacesService(map);
