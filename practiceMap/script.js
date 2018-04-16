@@ -23,7 +23,8 @@ function initialize() {
 
   map = new google.maps.Map(document.getElementById('map'), {
       center: aberdeen,
-      zoom: 15
+      zoom: 15,
+      disableDefaultUI: true
     });
 
   var request = {
@@ -57,6 +58,7 @@ function createMarker(place) {
     infowindow.open(map, this);
   });
 }
+
 function codeAddress() {
 
   var address = document.getElementById('address').value;
