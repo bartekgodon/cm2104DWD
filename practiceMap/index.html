@@ -10,7 +10,6 @@
 
 <body>
 
-  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&libraries=places"></script> -->
   <div id = "map"></div>
 
 
@@ -18,6 +17,32 @@
     <input id = "address" type = "textbox"  onkeydown="checkSubmit()" size = "50">
     <input type = "button" value = "Search" onclick="codeAddress()">
   </div>
+
+  <div id = "search">
+    <select id = "categorySelect">
+        <option value="0">Select attraction category...</option>
+        <option value="amusement_park">Amusement Park</option>
+        <option value="aquarium">Aquarium</option>
+        <option value="art_gallery">Art Gallery</option>
+        <option value="bar">Bar</option>
+        <option value="bowling_alley">Bowling Alley</option>
+        <option value="gym">Gym</option>
+        <option value="museum">Museum</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="spa">Spa</option>
+        <option value="stadium">Stadium</option>
+        <option value="zoo">Zoo</option>
+    </select>
+    <input type = "button" value = "Search" onclick="categorySearch()">
+  </div>
+  <div id = "search">
+    <div id = "searchResults">
+      <h2>Results</h2>
+      <ul id = "places"></ul>
+      <button id = "more">Load more results</button>
+    </div>
+  </div>
+
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initialize&libraries=places" async defer>
   </script>
