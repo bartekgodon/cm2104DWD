@@ -7,8 +7,6 @@ header, form, #map, #search{
   font-family: sans-serif;
   padding: 10px;
   margin: 10px;
-
-
 }
 
 #map {
@@ -16,4 +14,19 @@ header, form, #map, #search{
   width: 100%;
   background-color: grey;
   border: none;
+}
+
+#searchResults{
+  height:300px;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+
+#resultDiv{
+  background-color: silver;
+}
+
+#resultHead{
+  font-family: sans-serif;
+  color: green;
 }

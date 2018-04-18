@@ -5,7 +5,6 @@
   <title> Map </title>
   <script type = "text/javascript" src = "script.js"></script>
   <link rel = "stylesheet" href = "style.css">
-
 </head>
 
 <body>
@@ -33,18 +32,18 @@
         <option value="stadium">Stadium</option>
         <option value="zoo">Zoo</option>
     </select>
+    <input type="number" id = "radius" placeholder = "Radius (km)" min="1" max="50">
     <input type = "button" value = "Search" onclick="categorySearch()">
   </div>
   <div id = "search">
     <div id = "searchResults">
       <h2>Results</h2>
-      <ul id = "places"></ul>
-      <button id = "more">Load more results</button>
+      <div id = "places"></ul>
     </div>
   </div>
 
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initialize&libraries=places" async defer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMIarn_4bcxK0VGdVjAm1HjEKciHPejmE&callback=initialize&libraries=places">
   </script>
 
 </body>
