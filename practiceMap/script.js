@@ -94,9 +94,14 @@ function createMarker(place) {
     var p = document.createElement("p");
     p.setAttribute("id","resultPara");
 
-    var button = document.createElement("BUTTON");
-    var t = document.createTextNode("ADD");
-    button.appendChild(t);
+    var button = document.createElement('a');
+    var buttonText = document.createTextNode("Add to Favourites");
+    button.setAttribute('href', "http://google.com");
+    button.appendChild(buttonText);
+
+    // var button = document.createElement("BUTTON");
+    // var t = document.createTextNode("Add to Favourites");
+    // button.appendChild(t);
 
     h3.textContent = place.name;
     p.textContent = place.vicinity;

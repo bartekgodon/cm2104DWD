@@ -14,6 +14,7 @@ header, form, #map, #search{
   width: 100%;
   background-color: grey;
   border: none;
+  filter: grayscale(75%);
 }
 
 #searchResults{
