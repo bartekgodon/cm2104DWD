@@ -13,7 +13,7 @@ function initialize() {
 
   map = new google.maps.Map(document.getElementById('map'), {
       center: aberdeen,
-      zoom: 15,
+      zoom: 13;
       disableDefaultUI: true
     });
 };
@@ -85,7 +85,7 @@ function createMarker(place) {
 
     //listener to zoom on the marker when clicked on
     marker.addListener('click', function() {
-      map.setZoom(20);
+      map.setZoom(29);
       map.setCenter(marker.getPosition());
     });
 
