@@ -83,6 +83,11 @@ function createMarker(place) {
       position: place.geometry.location
     });
 
+    //listener to zoom on the marker when clicked on
+    marker.addListener('click', function() {
+      map.setZoom(20);
+      map.setCenter(marker.getPosition());
+    });
 
     //generate place result info div
     var div = document.createElement('div');
@@ -104,7 +109,7 @@ function createMarker(place) {
     // button.appendChild(t);
 
     h3.textContent = place.name;
-    p.textContent = place.vicinity;
+    p.textContent = "Address: "+place.vicinity;
 
     div.appendChild(h3);
     div.appendChild(p);
