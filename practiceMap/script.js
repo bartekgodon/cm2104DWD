@@ -104,10 +104,6 @@ function createMarker(place) {
     button.setAttribute('href', "http://google.com");
     button.appendChild(buttonText);
 
-    // var button = document.createElement("BUTTON");
-    // var t = document.createTextNode("Add to Favourites");
-    // button.appendChild(t);
-
     h3.textContent = place.name;
     p.textContent = "Address: "+place.vicinity;
 
@@ -117,7 +113,6 @@ function createMarker(place) {
 
     //add info div into the result list
     placesList.appendChild(div);
-
 };
 
 function codeAddress() {
